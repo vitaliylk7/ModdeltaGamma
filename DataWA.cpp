@@ -69,41 +69,33 @@ void DataWA::setAnisotropyFactor(objData anisotropyFactors) {
 //---------------------------------------------------------------------------
 Column DataWA::getColumn(String Name)
 {
-  Column _Column;
-  bool bGap;
-  String s = Name;
-  int iLength = s.Length();
-  bGap = false;
-  int i = 1;
-  while (i <= iLength)
-  {
-    if (s[i] == ' ')
-    {
-      bGap = true;
-      s.SetLength(i-1);
-      break;
-    }
-    i++;
-  }
+    Column _Column;
+    String s = Name;
+    bool hasLgSuffix = false;
 
-  if (bGap)
-  {
-    _Column.n = _Data->getNumberForColumnName(s);
-    _Column.bLog10 = true;
-    _Column._Criterion.Name = Name;
-    if (-1 == _Column.n)
-    {
-      ShowMessage("Ошибка подготовка данных к вычислению");
+    // Проверяем, заканчивается ли имя на "_lg"
+    if (s.Length() >= 3) {
+        String suffix = s.SubString(s.Length() - 2, 3); // последние 3 символа
+        if (suffix == "_lg") {
+            hasLgSuffix = true;
+            s.SetLength(s.Length() - 3); // удаляем "_lg" из имени для поиска
+        }
     }
-  }
-  else
-  {
-    _Column.n = _Data->getNumberForColumnName(s);
-    _Column.bLog10 = false;
-    _Column._Criterion.Name = Name;
-  }
 
-  return _Column;
+    // Удаляем возможные пробелы в начале/конце
+    s = s.Trim();
+
+    // Поиск колонки в исходных данных по имени (без "_lg")
+    _Column.n = _Data->getNumberForColumnName(s);
+
+    if (-1 == _Column.n) {
+        ShowMessage("Ошибка: не найдено исходное поле '" + s + "' для признака '" + Name + "'");
+    }
+
+    _Column.bLog10 = hasLgSuffix;
+    _Column._Criterion.Name = Name; // сохраняем оригинальное имя (с _lg)
+
+    return _Column;
 }
 //---------------------------------------------------------------------------
 // Получить строку данных

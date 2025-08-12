@@ -48,7 +48,7 @@ void __fastcall TfrmViewSettingData::FormShow(TObject *Sender)
     dxIZ->Items->Add(ColumnName);
     chCriterion->Items->Add(ColumnName);
     frmDialogBackground->Add(ColumnName);
-    ColumnName_lg = ColumnName + " lg";
+    ColumnName_lg = ColumnName + "_lg";
     chCriterion->Items->Add(ColumnName_lg);
     frmDialogBackground->Add(ColumnName_lg);
   }
