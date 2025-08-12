@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="ModDeltaG.exe"/>
+    <OBJFILES value="ModDeltaG.obj Main.obj About.obj Data.obj ViewSettingData.obj 
+      SettingsFile.obj DataView.obj Settings.obj Process.obj ProgressWork.obj 
+      ViewApproximation.obj ChooseVisualApproximation.obj Ini.obj 
+      CheckWeigthApproximationType.obj ChooseTypePlaneFor2D.obj 
+      SettingsDynCreate.obj LevelSettings.obj SettingsForLevels.obj 
+      LevelSettingsVisual.obj FactoryProcess.obj Utils.obj MainDataModul.obj 
+      DialogSaveResult.obj ChooseLevels.obj SettingsApprox2D3D.obj 
+      FormSettings.obj DialogSetMinMax.obj ReportText.obj DataWA.obj 
+      DataWA_2D.obj FactoryDataWA.obj ProcessWA.obj ProcessWA_2D.obj 
+      FactoryProcessWA.obj FactoryParamWA.obj ProcessWA_levels.obj 
+      DialogBackground.obj DialogRegClassMinW.obj ProcessWA_BetaStep.obj 
+      DataWA_Area.obj"/>
+    <RESFILES value="ModDeltaG.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Main.dfm About.dfm ViewSettingData.dfm SettingsFile.dfm 
+      DataView.dfm ProgressWork.dfm ViewApproximation.dfm 
+      ChooseVisualApproximation.dfm CheckWeigthApproximationType.dfm 
+      ChooseTypePlaneFor2D.dfm MainDataModul.dfm DialogSaveResult.dfm 
+      ChooseLevels.dfm FormSettings.dfm DialogSetMinMax.dfm ReportText.dfm 
+      DialogBackground.dfm DialogRegClassMinW.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="bcbie50.lib OpenGLAP.lib vclbde50.lib vcldbx50.lib TEEGL5C5.lib 
+      TEEUI5C5.lib TEEPRO5C5.lib TEE5C5.lib bcbsmp50.lib DXDBEDC5.lib 
+      VCLDB50.lib DXINSC5.lib DXEDTRC5.lib Vclx50.lib DXCOMNC5.lib DXBARC5.lib 
+      Vcl50.lib"/>
+    <SPARELIBS value="Vcl50.lib DXBARC5.lib DXCOMNC5.lib Vclx50.lib DXEDTRC5.lib DXINSC5.lib 
+      VCLDB50.lib DXDBEDC5.lib bcbsmp50.lib TEE5C5.lib TEEPRO5C5.lib 
+      TEEUI5C5.lib TEEGL5C5.lib vcldbx50.lib vclbde50.lib OpenGLAP.lib bcbie50.lib"/>
+    <PACKAGES value="Vcl50.bpi Vclx50.bpi bcbsmp50.bpi Vcldb50.bpi vclado50.bpi ibsmp50.bpi 
+      VCLBDE50.bpi vcldbx50.bpi Qrpt50.bpi Dss50.bpi TeeUI50.bpi TeeDB50.bpi 
+      Tee50.bpi TeeQR50.bpi VCLIB50.bpi Vclmid50.bpi vclie50.bpi Inetdb50.bpi 
+      Inet50.bpi NMFast50.bpi webmid50.bpi bcbie50.bpi dclocx50.bpi 
+      bcb97axserver50.bpi DXCOMNC5.bpi DXBARC5.bpi DXBARDBNAVC5.bpi 
+      DXBAREXTITEMSC5.bpi DXBAREXTDBITEMSC5.bpi DXSBC5.bpi DXEDTRC5.bpi 
+      DXDBEDC5.bpi DXINSC5.bpi DXMASTERVIEWC5.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="tlink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="ModDeltaG.cpp"/>
+    <INCLUDEPATH value="&quot;D:\Program Files\Borland\CBuilder5\Projects\&quot;;&quot;C:\Program Files\OpenGL\Panel\&quot;;&quot;C:\Program Files\Borland\CBuilder5\Bin\&quot;;&quot;C:\Program Files\Borland\CBuilder5\Projects\&quot;;&quot;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\&quot;;&quot;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\&quot;;&quot;C:\Program Files\CBuilder5\CBuilder5\Bin\&quot;;&quot;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\&quot;;$(BCB)\include;$(BCB)\include\vcl;&quot;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\&quot;;&quot;d:\Program Files\OpenGL\Panel\&quot;;&quot;d:\Program Files\Borland\CBuilder5\Bin\&quot;;&quot;d:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\&quot;;&quot;d:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\&quot;;&quot;d:\Program Files\CBuilder5\CBuilder5\Bin\&quot;;&quot;d:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\&quot;;&quot;d:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\&quot;;&quot;C:\Program Files\Borland\OpenGL\Panel\&quot;"/>
+    <LIBPATH value="&quot;D:\Program Files\Borland\CBuilder5\Projects\&quot;;&quot;C:\Program Files\OpenGL\Panel\&quot;;&quot;C:\Program Files\Borland\CBuilder5\Bin\&quot;;&quot;C:\Program Files\Borland\CBuilder5\Projects\&quot;;&quot;C:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\&quot;;&quot;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\&quot;;&quot;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\&quot;;&quot;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\&quot;;&quot;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\&quot;;$(BCB)\lib\obj;$(BCB)\lib;&quot;d:\Program Files\OpenGL\Panel\&quot;;&quot;d:\Program Files\Borland\CBuilder5\Bin\&quot;;&quot;d:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\&quot;;&quot;d:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\&quot;;&quot;d:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\&quot;;&quot;d:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\&quot;;&quot;d:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\&quot;;&quot;C:\Program Files\Borland\OpenGL\Panel\&quot;"/>
+    <WARNINGS value="-w-par"/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;D:\Program Files\Borland\CBuilder5\Projects\.&quot; 
+      -I&quot;C:\Program Files\OpenGL\Panel\.&quot; 
+      -I&quot;C:\Program Files\Borland\CBuilder5\Bin\.&quot; 
+      -I&quot;C:\Program Files\Borland\CBuilder5\Projects\.&quot; 
+      -I&quot;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\.&quot; 
+      -I&quot;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\.&quot; 
+      -I&quot;C:\Program Files\CBuilder5\CBuilder5\Bin\.&quot; 
+      -I&quot;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\.&quot; 
+      -I$(BCB)\include -I$(BCB)\include\vcl 
+      -I&quot;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\.&quot; 
+      -I&quot;d:\Program Files\OpenGL\Panel\.&quot; 
+      -I&quot;d:\Program Files\Borland\CBuilder5\Bin\.&quot; 
+      -I&quot;d:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\.&quot; 
+      -I&quot;d:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\.&quot; 
+      -I&quot;d:\Program Files\CBuilder5\CBuilder5\Bin\.&quot; 
+      -I&quot;d:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\.&quot; 
+      -I&quot;d:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\.&quot; 
+      -I&quot;C:\Program Files\Borland\OpenGL\Panel\.&quot; -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl50.csm -Hc -Vx -Ve -X- -r- -a8 -5 -b- -k -y -v -vi- 
+      -c -tW -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=2
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1049
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=Home
+FileDescription=WeigthApproximation.bpr
+FileVersion=2.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\dcldxExRwC5.bpl=ExpressInspector Extended Rows
+
+[HistoryLists\hlIncludePath]
+Count=23
+Item0=D:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\OpenGL\Panel\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\CBuilder5\CBuilder5\Bin\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;d:\Program Files\OpenGL\Panel\;d:\Program Files\Borland\CBuilder5\Bin\;d:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;d:\Program Files\CBuilder5\CBuilder5\Bin\;d:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;C:\Program Files\Borland\OpenGL\Panel\
+Item1=D:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\OpenGL\Panel\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\CBuilder5\CBuilder5\Bin\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;d:\Program Files\OpenGL\Panel\;d:\Program Files\Borland\CBuilder5\Bin\;d:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;d:\Program Files\CBuilder5\CBuilder5\Bin\;d:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;C:\Program Files\Borland\OpenGL\Panel
+Item2=D:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\OpenGL\Panel\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\CBuilder5\CBuilder5\Bin\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;d:\Program Files\OpenGL\Panel\;d:\Program Files\Borland\CBuilder5\Bin\;d:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;d:\Program Files\CBuilder5\CBuilder5\Bin\;d:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item3=D:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\OpenGL\Panel\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\CBuilder5\CBuilder5\Bin\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;d:\Program Files\OpenGL\Panel\;d:\Program Files\Borland\CBuilder5\Bin\;d:\Program Files\Borland\CBuilder5\Bin\;d:\Program Files\Borland\CBuilder5\Projects\;d:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;d:\Program Files\CBuilder5\CBuilder5\Bin\;d:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item4=D:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\OpenGL\Panel\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\CBuilder5\CBuilder5\Bin\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item5=D:\Program Files\Borland\CBuilder5\Projects;C:\Program Files\OpenGL\Panel\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\CBuilder5\CBuilder5\Bin\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item6=C:\Program Files\OpenGL\Panel\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\CBuilder5\CBuilder5\Bin\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item7=C:\Program Files\Components\OpenGL\Panel\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\CBuilder5\CBuilder5\Bin\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item8=C:\Program Files\Components\OpenGL\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\CBuilder5\CBuilder5\Bin\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item9=C:\Program Files\Components\OpenGL;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\CBuilder5\CBuilder5\Bin\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item10=C:\Program Files\Borland\Components\OpenGL\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\CBuilder5\CBuilder5\Bin\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item11=C:\Program Files\Borland\Components\OpenGL;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\CBuilder5\CBuilder5\Bin\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item12=C:\Program Files\Components\OpenGL;C:\Program Files\Borland\CBuilder5\Bin;C:\Program Files\Borland\CBuilder5\Projects;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\CBuilder5\CBuilder5\Bin\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item13=d:\components\cbuilder\opengl\;D:\Program Files\CBuilder5\Bin\;D:\CBuilder5\Projects\;D:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;D:\Program Files\CBuilder5\CBuilder5\Bin\;D:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;D:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item14=d:\components\cbuilder\opengl;D:\Program Files\CBuilder5\Bin\;D:\CBuilder5\Projects\;D:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;D:\Program Files\CBuilder5\CBuilder5\Bin\;D:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;D:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item15=D:\Program Files\CBuilder5\Bin\;D:\CBuilder5\Projects\;D:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;D:\Program Files\CBuilder5\CBuilder5\Bin\;D:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;D:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item16=D:\Program Files\CBuilder5\Bin;D:\CBuilder5\Projects\;D:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;D:\Program Files\CBuilder5\CBuilder5\Bin\;D:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;D:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item17=D:\CBuilder5\Projects\;D:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;D:\Program Files\CBuilder5\CBuilder5\Bin\;D:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;D:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item18=D:\CBuilder5\Projects;D:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;D:\Program Files\CBuilder5\CBuilder5\Bin\;D:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;D:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item19=D:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;D:\Program Files\CBuilder5\CBuilder5\Bin\;D:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;$(BCB)\include;$(BCB)\include\vcl;D:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item20=D:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib;D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib;D:\Program Files\CBuilder5\CBuilder5\Bin;D:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib;$(BCB)\include;$(BCB)\include\vcl;D:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib
+Item21=D:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib;D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib;D:\Program Files\CBuilder5\CBuilder5\Bin;D:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib;$(BCB)\include;$(BCB)\include\vcl
+Item22=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=22
+Item0=D:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\OpenGL\Panel\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib;d:\Program Files\OpenGL\Panel\;d:\Program Files\Borland\CBuilder5\Bin\;d:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;C:\Program Files\Borland\OpenGL\Panel\
+Item1=D:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\OpenGL\Panel\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib;d:\Program Files\OpenGL\Panel\;d:\Program Files\Borland\CBuilder5\Bin\;d:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;C:\Program Files\Borland\OpenGL\Panel
+Item2=D:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\OpenGL\Panel\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib;d:\Program Files\OpenGL\Panel\;d:\Program Files\Borland\CBuilder5\Bin\;d:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item3=D:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\OpenGL\Panel\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib;d:\Program Files\OpenGL\Panel\;d:\Program Files\Borland\CBuilder5\Bin\;d:\Program Files\Borland\CBuilder5\Projects\;d:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;d:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\
+Item4=D:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\OpenGL\Panel\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib
+Item5=D:\Program Files\Borland\CBuilder5\Projects;C:\Program Files\OpenGL\Panel\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib
+Item6=C:\Program Files\OpenGL\Panel\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib
+Item7=C:\Program Files\Components\OpenGL\Panel\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib
+Item8=C:\Program Files\Components\OpenGL\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib
+Item9=C:\Program Files\Components\OpenGL;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib
+Item10=C:\Program Files\Borland\Components\OpenGL\;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib
+Item11=C:\Program Files\Borland\Components\OpenGL;C:\Program Files\Borland\CBuilder5\Bin\;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib
+Item12=C:\Program Files\Components\OpenGL;C:\Program Files\Borland\CBuilder5\Bin;C:\Program Files\Borland\CBuilder5\Projects;C:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;C:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib
+Item13=d:\components\cbuilder\opengl\;D:\Program Files\CBuilder5\Bin\;D:\CBuilder5\Projects\;D:\Program Files\CBuilder5\CBuilder5\Bin\;D:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib
+Item14=d:\components\cbuilder\opengl;D:\Program Files\CBuilder5\Bin\;D:\CBuilder5\Projects\;D:\Program Files\CBuilder5\CBuilder5\Bin\;D:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib
+Item15=D:\Program Files\CBuilder5\Bin\;D:\CBuilder5\Projects\;D:\Program Files\CBuilder5\CBuilder5\Bin\;D:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib
+Item16=D:\Program Files\CBuilder5\Bin;D:\CBuilder5\Projects\;D:\Program Files\CBuilder5\CBuilder5\Bin\;D:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib
+Item17=D:\CBuilder5\Projects\;D:\Program Files\CBuilder5\CBuilder5\Bin\;D:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib
+Item18=D:\CBuilder5\Projects;D:\Program Files\CBuilder5\CBuilder5\Bin\;D:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib
+Item19=D:\Program Files\CBuilder5\CBuilder5\Bin\;D:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib
+Item20=D:\Program Files\CBuilder5\CBuilder5\Bin;D:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib
+Item21=D:\Program Files\Developer Express Inc\ExpressMasterView\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInspector\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressInplaceEditors\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressBars\C++Builder 5\Lib\;D:\Program Files\Developer Express Inc\ExpressCommon\C++Builder 5\Lib\;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

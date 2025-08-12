@@ -1,0 +1,13 @@
+Error 00037. 0x300010 (Thread 0x05AC):
+Resource leak: The object (0x1266D44) was never deleted
+
+The object (0x01266D44) [size: 96 bytes] was created with new
+Call Tree:
+   0x00415587(=ModDelta.exe:0x01:014587) D:\PROGRAM FILES\BORLAND\CBUILDER5\INCLUDE\rw/ctype.h#494
+   0x00410A22(=ModDelta.exe:0x01:00FA22) D:\PROGRAM FILES\BORLAND\CBUILDER5\INCLUDE\rw/locimpl.h#454
+   0x0056C6D1(=ModDelta.exe:0x01:16B6D1)
+   0x0041090E(=ModDelta.exe:0x01:00F90E) D:\PROGRAM FILES\BORLAND\CBUILDER5\INCLUDE\rw/usefacet.h#72
+   0x00411D17(=ModDelta.exe:0x01:010D17) D:\PROGRAM FILES\BORLAND\CBUILDER5\INCLUDE\ios.h#375
+   0x00563026(=ModDelta.exe:0x01:162026)
+
+------------------------------------------
