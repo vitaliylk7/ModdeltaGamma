@@ -278,27 +278,27 @@ bool ProcessWA_BetaStep::SaveResult() {
     outFirmsFile << (4 + (CountColumn *(2 + countBetaSteps * 3)))
       << endl;
     // вывод заголовков столбцов
-    outFirmsFile << "num" << "\t\t\t" << "x" << "\t\t\t" << "y" << "\t\t\t"
-      << 'z' << "\t\t\t";
+    outFirmsFile << "num" << "\t" << "x" << "\t" << "y" << "\t"
+      << 'z' << "\t";
 
       String tmp, s;
       for (int colCharacters = 0; colCharacters < CountColumn; ++colCharacters)
       {
       s = processWA->getStNameCol(colCharacters);
-      outFirmsFile << s.c_str() << "\t\t\t";
+      outFirmsFile << s.c_str() << "\t";
       tmp = "e";
-      outFirmsFile << tmp.c_str() << "\t\t\t";
+      outFirmsFile << tmp.c_str() << "\t";
 
       for (iterProcessWA _iterProcessWA = _listProcessWA.begin();
         _iterProcessWA != _listProcessWA.end();  ++_iterProcessWA)
         {
          processWA = *_iterProcessWA;
          tmp = s + "_G" + FormatFloat("0.###",processWA->getBeta());
-         outFirmsFile << tmp.c_str() << "\t\t\t";
-         tmp = "w_G" + FormatFloat("0.###",processWA->getBeta()) + "\t\t\t";
+         outFirmsFile << tmp.c_str() << "\t";
+         tmp = "w_G" + FormatFloat("0.###",processWA->getBeta()) + "\t";
          outFirmsFile << tmp.c_str();
          tmp = "d_G" + FormatFloat("0.###",processWA->getBeta());
-         outFirmsFile << tmp.c_str() << "\t\t\t";
+         outFirmsFile << tmp.c_str() << "\t";
         }
      }
 
@@ -308,22 +308,22 @@ bool ProcessWA_BetaStep::SaveResult() {
     for (int rec = 0; rec < CountRow; ++rec)
     {
       _objDataStandart = processWA->getStXYZ(rec);
-      outFirmsFile << (rec + 1) << "\t\t\t";
+      outFirmsFile << (rec + 1) << "\t";
       tmp = FormatFloat("0.00000",_objDataStandart.x);
-      outFirmsFile << tmp.c_str() << "\t\t\t";
+      outFirmsFile << tmp.c_str() << "\t";
       tmp = FormatFloat("0.00000",_objDataStandart.y);
-      outFirmsFile << tmp.c_str() << "\t\t\t";
+      outFirmsFile << tmp.c_str() << "\t";
       tmp = FormatFloat("0.00000",_objDataStandart.z);
-      outFirmsFile << tmp.c_str() << "\t\t\t";
+      outFirmsFile << tmp.c_str() << "\t";
 
         for (long col = 0; col < CountColumn; ++col)
           {
           // Real value
           tmp = FormatFloat("0.00000",processWA->getRealValue(col, rec));
-          outFirmsFile << tmp.c_str() << "\t\t\t";
+          outFirmsFile << tmp.c_str() << "\t";
           // E
           tmp = FormatFloat("0.00000",processWA->getE(col, rec));
-          outFirmsFile << tmp.c_str() << "\t\t\t";
+          outFirmsFile << tmp.c_str() << "\t";
 
           for (iterProcessWA _iterProcessWA = _listProcessWA.begin();
              _iterProcessWA != _listProcessWA.end();  ++_iterProcessWA)
@@ -331,13 +331,13 @@ bool ProcessWA_BetaStep::SaveResult() {
              processWA = *_iterProcessWA;
              // T
              tmp = FormatFloat("0.00000",processWA->getStT(col, rec));
-             outFirmsFile << tmp.c_str() << "\t\t\t";
+             outFirmsFile << tmp.c_str() << "\t";
              // W
              tmp = FormatFloat("0.00000",processWA->getStW(rec));
-             outFirmsFile << tmp.c_str() << "\t\t\t";
+             outFirmsFile << tmp.c_str() << "\t";
              // D
              tmp = FormatFloat("0.00000",processWA->getD(col, rec));
-             outFirmsFile << tmp.c_str() << "\t\t\t";
+             outFirmsFile << tmp.c_str() << "\t";
              }
           }
       outFirmsFile << endl;

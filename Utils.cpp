@@ -13,6 +13,9 @@ String getFileNameSave(String Title)
 
   TSaveDialog* SaveDialog = new TSaveDialog(dmGlobal);
   SaveDialog->Title = Title;
+  SaveDialog->DefaultExt = "txt"; // Set default extension to .txt
+  SaveDialog->Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*"; // Set filter for .txt files
+  SaveDialog->FilterIndex = 1; // Select the .txt filter by default
   AnsiString sFileName = "1";
 
   if (SaveDialog->Execute())
@@ -36,6 +39,9 @@ String getFileNameSave(String Title, String DefaultFileName)
 
   TSaveDialog* SaveDialog = new TSaveDialog(dmGlobal);
   SaveDialog->Title = Title;
+  SaveDialog->DefaultExt = "txt"; // Set default extension to .txt
+  SaveDialog->Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*"; // Set filter for .txt files
+  SaveDialog->FilterIndex = 1; // Select the .txt filter by default
   AnsiString sFileName = "1";
   SaveDialog->FileName = DefaultFileName;
 

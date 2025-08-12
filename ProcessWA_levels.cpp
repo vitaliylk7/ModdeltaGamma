@@ -243,7 +243,7 @@ bool ProcessWA_levels::SaveStandart(String FileName)
   {
     ofstream outFirmsFile(FileName.c_str(), ios::out);
     outFirmsFile << (CountColumnAprox + 4) << endl; // iAmo_Column
-    outFirmsFile << 'x' << "\t\t" << 'y' << "\t\t" << 'z' << "\t\t";
+    outFirmsFile << 'x' << "\t" << 'y' << "\t" << 'z' << "\t";
 
     long tmpCountColumnAprox = CountColumnAprox -1;
     int iLength;
@@ -251,17 +251,17 @@ bool ProcessWA_levels::SaveStandart(String FileName)
     // Подпишим колонки в файле для уровней
     for (int level = 0; level < CountLevels; ++level)
     {
-      outFirmsFile << (level + 1) << "W" << "\t\t";
+      outFirmsFile << (level + 1) << "W" << "\t";
       for (long i = 0; i < CountColumnAprox; i++)
       {
         s = _DataWA->getNameCol(i);
         s = getColName(s);
-        outFirmsFile << (level + 1) << s.c_str() << "\t\t";
+        outFirmsFile << (level + 1) << s.c_str() << "\t";
       }
     }
 
     // Подпишим колонки в файле для общих значений всех уровней
-    outFirmsFile << "W" << "\t\t";
+    outFirmsFile << "W" << "\t";
     for (long i = 0; i < CountColumnAprox; ++i)
     {
       s = _DataWA->getNameCol(i);
@@ -271,7 +271,7 @@ bool ProcessWA_levels::SaveStandart(String FileName)
       if (tmpCountColumnAprox == i)
         outFirmsFile << endl;
       else
-        outFirmsFile << "\t\t";
+        outFirmsFile << "\t";
     }
 
     // Запишим значения колонок для уровней
@@ -280,11 +280,11 @@ bool ProcessWA_levels::SaveStandart(String FileName)
     {
       // _objNet = _Net->getValue(rec);
       s = FormatFloat("0.00000",_objNet.x);
-      outFirmsFile << s.c_str() << "\t\t";
+      outFirmsFile << s.c_str() << "\t";
       s = FormatFloat("0.00000",_objNet.y);
-      outFirmsFile << s.c_str() << "\t\t";
+      outFirmsFile << s.c_str() << "\t";
       s = FormatFloat("0.00000",_objNet.z);
-      outFirmsFile << s.c_str() << "\t\t";
+      outFirmsFile << s.c_str() << "\t";
 
       // Значения уровней
       for (_iterProcessWA = _listProcessWA.begin();
@@ -292,17 +292,17 @@ bool ProcessWA_levels::SaveStandart(String FileName)
       {
         _ProcessWA = *_iterProcessWA;
         s = FormatFloat("0.00000", _ProcessWA->getStW(rec));
-        outFirmsFile << s.c_str() << "\t\t";
+        outFirmsFile << s.c_str() << "\t";
         for (int col = 0; col < CountColumnAprox; ++col)
         {
           s = FormatFloat("0.00000",_ProcessWA->getStT(col, rec));
-          outFirmsFile << s.c_str() << "\t\t";
+          outFirmsFile << s.c_str() << "\t";
         }
       }
 
       // Значения общие для всех уровней
       s = FormatFloat("0.00000", vStandartW[rec]);
-      outFirmsFile << s.c_str() << "\t\t";
+      outFirmsFile << s.c_str() << "\t";
       for (int col = 0; col < CountColumnAprox; ++col)
       {
         s = FormatFloat("0.00000",vTildeStandart[rec][col]);
@@ -310,7 +310,7 @@ bool ProcessWA_levels::SaveStandart(String FileName)
         if (tmpCountColumnAprox == col)
           outFirmsFile << endl;
         else
-          outFirmsFile << "\t\t";
+          outFirmsFile << "\t";
       }
     }
 
